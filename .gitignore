@@ -1,0 +1,22 @@
+# Dependencias y compilación (Docker las genera dentro del contenedor)
+node_modules/
+dist/
+
+# Pyodide se copia desde node_modules al compilar (scripts/copy-pyodide.mjs)
+public/pyodide/
+.vite/
+
+# Registros
+*.log
+npm-debug.log*
+
+# Variables de entorno locales
+.env
+.env.*
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
